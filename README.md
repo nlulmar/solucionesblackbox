@@ -1,7 +1,7 @@
 # solucionesblackbox
 Soluciones a los restos de la newsletter de Andros Fenollosa
 
-##blackbox1
+## blackbox1
 Filtrador de años
 
 A partir de una secuencia con un listado de fechas en formato YYYY-MM-DD, filtra por el año indicado.
