@@ -1,5 +1,5 @@
 # solucionesblackbox
-Soluciones a los restos de la newsletter de Andros Fenollosa
+Soluciones a los retos de la newsletter de Andros Fenollosa
 
 ## blackbox1
 Filtrador de años
