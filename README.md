@@ -27,3 +27,21 @@ return []
 generar_cubo_rubik_aleatorio()
  [3, 5, 0, 2, 1, 4, 5, 0, 1, 2, 4, 1, 2, 1, 3, 5, 5, 4, 1, 3, 5, 3, 2, 4, 3, 0, 0, 2, 2, 3, 5, 3, 0, 0, 1, 1, 2, 4, 4, 3, 5, 4, 3, 0, 5, 4, 1, 5, 1, 4, 0, 2, 2, 0]
 `
+
+## blackbox3
+Ocultando números sensibles
+Crea una función que oculte los números de una tarjeta de crédito, salvo los 3 últimos dígitos. Deberías recibir siempre 16 dígitos y puede ser string o int.
+Si la longitud no es válida, devolverás un False.
+Algunos parámetros esperados.
+``1234567890123456
+"1234567890123456"
+"1234 5678 9012 3456"
+``
+En todos los casos anteriores devolveremos:
+``xxxxxxxxxxxxx456``
+La siguiente estructura puede servirte de prototipo.
+
+### Sintaxis: Python 3.9+
+``def ocultar_numeros(numeros: str|int, char_hide: str = "x") -> str:
+ Código
+return ""``
