@@ -1,11 +1,10 @@
 def format_price(inputPrice: Either[Float, Int]): String = {
   val price = inputPrice.merge
   val priceClass = price.getClass.getSimpleName
-  val finalPrice = priceClass match {
+  priceClass match {
     case "Integer" => s"${price.toString}"
     case "Float" => "%.2f".format(price).replaceAll(",00", "")
   }
-  finalPrice
 }
 
 assert(format_price(Right(8)) == "8")
