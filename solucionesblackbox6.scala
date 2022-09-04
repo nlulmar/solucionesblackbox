@@ -1,0 +1,1 @@
+val disco = ((4, "Unicornio", 2), (3, "Pegasus", 6), (1, "Dragón", 3), (5, "Griffin", 4), (2, "Minotaur", 1), (6, "Quimera", 5))

@@ -102,3 +102,39 @@ generar_contrasenya(6)
 
 generar_contrasenya(2)
  Xj6^
+
+## blackbox6
+Desfragmentando el disco
+La información tiende a desfragmentarse paulatinamente en un disco según pasa el tiempo. En los discos duros mecánicos, o HDD, afecta negativamente al tener que recorrer más distancia para leer o escribir los mismos datos. Incluso tiendo a acortar su vida útil al desgastar más sus partes. En los discos SSD no es importante al no existen piezas mecánicas.
+Por ello vamos a crear una función que nos ayude a acercar, u ordenar, toda la información del disco. Los datos serán representados por una lista enlazada. Cada nodo estará formado por: id, texto y id del siguiente nodo.
+disco = ((4, "Unicornio", 2), (3, "Pegasus", 6), (1, "Dragón", 3), (5, "Griffin", 4), (2, "Minotaur", 1), (6, "Quimera", 5))
+
+### Sintaxis: Python 3.9+
+``def desfragmentar_disco(disco: tuple[int]) -> tuple[int]:
+ Código
+return``
+
+``desfragmentar_disco(disco)
+ ((1, "Dragón", 3), (3, "Pegasus", 6), (6, "Quimera", 5), (5, "Griffin", 4), (4, "Unicornio", 2), (2, "Minotaur", 1))
+``
+
+## blackbox7
+Convierte un código de color RGB a Hexadecimal.
+
+Para los cálculos dispongo de un vídeotutorial que subí no hace mucho.
+https://www.youtube.com/watch?v=EzpWwUkhHiY
+
+•	Los inputs son 2 bytes: de 0 a 255.
+
+•	Incluye # en el return.
+
+### Sintaxis: Python 3.9+
+``def rgb_a_hexadecimal(rojo: int, verde: int, azul: int) -> str:
+Código
+return``
+
+``rgb_a_hexadecimal(82, 31, 130)
+ #521f82``
+
+``rgb_a_hexadecimal(255, 0, 0)
+ #ff0000``
