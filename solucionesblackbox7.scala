@@ -1,5 +1,4 @@
-def rgbToHexEasy(a: Int, b: Int, c: Int): String = f"#$a%02x$b%02x$c%02x"
-
+//Solución "complicada"
 val listOfColours = Map(
   10 -> "a",
   11 -> "b",
@@ -28,6 +27,9 @@ def rgbToHexHard(a: Int, b: Int, c: Int): String = {
     s"#${channelList.map(getHex).mkString}"
   }
 }
+
+//Solución sencilla
+def rgbToHexEasy(a: Int, b: Int, c: Int): String = f"#$a%02x$b%02x$c%02x"
 
 assert(rgbToHexEasy(255,0,0) == "#ff0000")
 assert(rgbToHexHard(255,0,0) == "#ff0000")
