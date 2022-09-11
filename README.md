@@ -138,3 +138,42 @@ return``
 
 ``rgb_a_hexadecimal(255, 0, 0)
  #ff0000``
+
+## blackbox8
+Comprobar si es un cuadrado mágico
+
+Un cuadrado mágico es aquel donde la suma de las columnas y las diagonales dan el mismo resultado.
+
+8  1  6  = 15
+
+3  5  7  = 15
+
+4  9  2  = 15
+
+=  =  =  =
+
+15 15 15  15
+
+Otra restricción es que los números no se pueden repetir. Tampoco es obligatorio que sean consecutivos o positivos.
+
+Quiero que una función que compruebe si una matriz de 3x3 es un cuadrado mágico. 
+
+Recuerda que debes revisar que la suma de las columnas, filas y diagonales sean iguales.
+
+No te recomiendo un gran listado de condicionales.
+
+
+### Sintaxis: Python 3.9+
+
+``def es_un_cuadrado_magico(matriz: tuple[tuple]) -> bool:
+Código
+return``
+
+``es_un_cuadrado_magico(((8, 1, 6), (3, 5, 7), (4, 9, 2)))
+ True``
+
+``es_un_cuadrado_magico(((18, 23, 16), (17, 19, 21), (22, 15, 20))
+ True``
+
+``es_un_cuadrado_magico(((-2, 5, 3), (0, 9, 7), (6, 4, 1)))
+ False``
