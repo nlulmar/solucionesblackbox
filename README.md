@@ -177,3 +177,17 @@ return``
 
 ``es_un_cuadrado_magico(((-2, 5, 3), (0, 9, 7), (6, 4, 1)))
  False``
+
+## blackbox9
+
+Ordena a mano
+Evita las repeticiones de esta lista sin usar las clásicas funciones de ayuda como puede ser Set(), uniq y similares. 
+Tan solo puedes usar la recursión y funciones de iteración como filter, reduce o map.
+
+lista_numeros_repetidos = (5, 2, 6, 5, 5, 6, 3, 1, 4, 2, 4)
+
+``def eliminar_repetidos(lista: tuple) -> list:
+pass``
+
+``eliminar_repetidos(lista_numeros_repetidos)
+ [5, 2, 6, 3, 1, 4]``

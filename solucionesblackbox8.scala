@@ -8,7 +8,10 @@ def isMagicSquare(square: List[List[Int]]): Boolean = {
     sums.toSet.sum
   }
 
-  val isSquare: Boolean = square.size.equals(square.head.size)
+  val numCols: Set[Int] = square.map(_.size).toSet
+  val isSquare: Boolean = if( numCols.size.equals(1) && square.size.equals(numCols.head ) ) true
+  else
+    false
 
   if (isSquare) {
     val rowsSum: List[Int] = square.map(_.sum)
