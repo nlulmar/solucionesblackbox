@@ -191,3 +191,20 @@ pass``
 
 ``eliminar_repetidos(lista_numeros_repetidos)
  [5, 2, 6, 3, 1, 4]``
+
+## infinitaRecursion 20
+
+Necesitamos una función que calcule la altura adecuada para un rectángulo a partir de una nueva anchura. Será utilizada para saber que medidas debe poseer una imagen.
+Por lo tanto, le pasaremos como argumentos la anchura actual, la altura actual y la nueva anchura. A cambio nos devolverá la altura adecuada manteniendo la proporción original y sin decimales (ya que usamos píxeles).
+
+``def obtener_altura(anchura_actual: int, altura_actual: int, anchura_nueva: int) -> int:
+Obtiene la altura de una imagen a partir de una anchura"""``
+    
+``Args:
+        anchura_actual (int): Anchura actual de la imagen
+        altura_actual (int): Altura actual de la imagen
+        anchura_nueva (int): Anchura deseada de la imagen
+``
+    ``Returns:
+        int: Altura de la imagen
+    pass``
