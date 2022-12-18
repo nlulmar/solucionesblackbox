@@ -2,30 +2,30 @@ import scala.collection.mutable.{Map => MutableMap}
 
 class Vitroceramica{
   private val fuegos: MutableMap[Int, (Boolean, Int)] = MutableMap(
-    0 -> (false, 0),
     1 -> (false, 0),
-    2 -> (false, 0)
+    2 -> (false, 0),
+    3 -> (false, 0)
   )
 
   def encender(fuego: Int): Unit = {
-    if (fuegos(fuego-1)._1) println(s"el fuego $fuego ya está encendido")
+    if (fuegos(fuego)._1) println(s"el fuego $fuego ya está encendido")
     else {
-      fuegos(fuego-1) = (true, 0)
+      fuegos(fuego) = (true, 0)
       println(s"fuego $fuego encendigo")
     }
   }
 
   def apagar(fuego: Int): Unit = {
-    if (fuegos(fuego-1)._1) {
-      fuegos(fuego-1) = (false, 0)
+    if (fuegos(fuego)._1) {
+      fuegos(fuego) = (false, 0)
       println(s"fuego $fuego apagado")
     }
     else println(s"el fuego $fuego ya está apagado")
   }
 
   def activar_temporizador(fuego: Int, segundos: Int): Unit = {
-   if(fuegos(fuego-1)._1) {
-     fuegos(fuego-1) = (true, segundos)
+   if(fuegos(fuego)._1) {
+     fuegos(fuego) = (true, segundos)
      println(s"temporizador activado para el fuego $fuego con $segundos segundos")
      Thread.sleep(segundos*1000)
      apagar(fuego)
@@ -38,15 +38,15 @@ class Vitroceramica{
   }
 
   def ver(): Unit = {
-    val fuego1: Char = fuegos(0)._1 match {
+    val fuego1: Char = fuegos(1)._1 match {
       case true => 'o'
       case false => 'x'
     }
-    val fuego2: Char = fuegos(1)._1 match {
+    val fuego2: Char = fuegos(2)._1 match {
       case true => 'o'
       case false => 'x'
     }
-    val fuego3: Char = fuegos(2)._1 match {
+    val fuego3: Char = fuegos(3)._1 match {
       case true => 'o'
       case false => 'x'
     }
