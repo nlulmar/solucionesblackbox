@@ -208,3 +208,23 @@ Obtiene la altura de una imagen a partir de una anchura"""``
     ``Returns:
         int: Altura de la imagen
     pass``
+
+## infinitaRecursion 21
+
+Vamos a crear un panel para gestionar una vitrocerámica. Podremos encender, o prender, (Bool) hasta un total de 3 fuegos (0, 1, 2). Además, disponemos de la posibilidad para crear temporizadores que los desactivarán transcurrido el tiempo indicado. Por último, dispondremos de una función para visualizar en ASCII su estado.
+En el siguiente ejemplo está encendido el 0, apagado el 1 y encendido el 2, pero con un temporizador que lo apagará en 41 segundos.
+``def ver() -> str: 
+pass
+0 ➡️ Estado 🟢 Temporizador ❌ 
+1 ➡️ Estado 🔴 Temporizador ❌ 
+2 ➡️ Estado 🟢 Temporizador 41``
+
+``def encender(fuego: int) -> bool:
+pass``
+
+``def apagar(fuego: int) -> bool:
+pass``
+
+``def activar_temporizador(fuego: int, segundos: int) -> bool:
+pass``
+
