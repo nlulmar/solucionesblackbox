@@ -239,3 +239,12 @@ dividir = aplicar_operacion("divide")
 print(sumar(3)(2)) # 5
 print(dividir(10)(4)) # 2.5
 ``
+
+## infinitaRecursion 24
+Escriba una función que utilice evaluación perezosa para calcular el promedio de una lista de números. El programa debe recibir una lista de números como entrada, y debe devolver el promedio de esos números como resultado.
+
+``def lazy_average(*args: int|float):
+pass
+average = lazy_average(8, 3, 8, 7, 6)
+print(average())
+6.4``
