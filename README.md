@@ -228,3 +228,14 @@ pass``
 ``def activar_temporizador(fuego: int, segundos: int) -> bool:
 pass``
 
+## infinitaRecursión 23
+
+Define la función aplicar_operacion que tome el argumento String operacion (puede admitir valores como “suma”, “resta”, “multiplica” y “divide”). La función debe devolver otra función que tome 2 números y aplique la operación matemática.
+
+``def aplicar_operacion(operacion: str, num1: float | int, num2: float | int) -> float | int:
+pass
+sumar = aplicar_operacion("suma")
+dividir = aplicar_operacion("divide")
+print(sumar(3)(2)) # 5
+print(dividir(10)(4)) # 2.5
+``
