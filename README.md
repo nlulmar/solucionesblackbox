@@ -248,3 +248,30 @@ pass
 average = lazy_average(8, 3, 8, 7, 6)
 print(average())
 6.4``
+
+## infinitaRecursion 47
+A partir de un listado de URLs debes crear otro listado nuevo eliminando los saltos de línea vacíos y cualquier elemento que no sea una URL válida.
+
+``listado_URLs = [
+"# Listado de URLs para Sitemap",
+"<https://miweb.com>",
+"Null",
+"<https://miweb.com/sobre-nosotros/>",
+"<https://miweb.com/contacto/>",
+"",
+"<https://miweb.com/blog/>",
+" ",
+"<https://miweb.com/blog/2023/06/01/mi-primer-post/>",
+"<https://miweb.com/blog/2023/06/02/mi-segundo-post/>",
+"None",
+"# Fin de listado",
+]``
+
+``def limpiar_listado_URLs(listado: tuple[str]) -> tuple[str]:
+#Tu código aquí
+pass``
+
+``listado_URLs_limpio = limpiar_listado_URLs(listado_URLs)``
+
+``print(listado_URLs_limpio)``
+``['<https://miweb.com>', '<https://miweb.com/sobre-nosotros/>', '<https://miweb.com/contacto/>', '<https://miweb.com/blog/>', '<https://miweb.com/blog/2023/06/01/mi-primer-post/>', '<https://miweb.com/blog/2023/06/02/mi-segundo-post/>']``
